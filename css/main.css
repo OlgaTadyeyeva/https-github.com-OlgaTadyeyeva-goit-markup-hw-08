@@ -504,18 +504,31 @@ body {
 }
 
 .work__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16x;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--second-color);
-  margin-bottom: 50px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16x;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+    margin-bottom: 50px;
+  }
 }
 
 .cards__list {
-  display: flex;
-  gap: 30px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .cards__list {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .cards__item {
