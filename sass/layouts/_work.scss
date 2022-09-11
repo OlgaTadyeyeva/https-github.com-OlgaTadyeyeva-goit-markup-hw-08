@@ -1,0 +1,44 @@
+.work {
+    padding-bottom: 94px;
+}
+
+.work__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16x;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+    margin-bottom: 50px;
+}
+
+.cards__list {
+    display: flex;
+    gap: 30px;
+}
+
+.cards__item {
+    position: relative;
+}
+
+.cards__wrap {
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards__text {
+    font-weight: 700;
+    font-size: var(--main-fs);
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+
+}

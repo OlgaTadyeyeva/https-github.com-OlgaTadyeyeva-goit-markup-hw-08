@@ -1,0 +1,218 @@
+.footer {
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width:1200px) {
+        flex-direction: row;
+        align-items: baseline;
+        
+    }
+}
+
+.footer-tablet {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;  
+    }
+    @media screen and (min-width:1200px) {
+        margin-right: 93px;
+    }
+}
+
+.footer-wrap {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-bottom: 60px;
+@media screen and (min-width:768px) {
+margin-right: 165px;}
+@media screen and (min-width:1200px) {
+    margin-right: 70px;
+}
+
+}
+
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.footer-studio {
+    color: var(--white-color)
+}
+
+.fotter-adress-link {
+    font-style: normal;
+    font-size: var(--main-fs);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    margin-bottom: 8px;
+    @media screen and (min-width:1200px) {
+    margin-bottom: 9px;
+        }
+}
+
+.footer-adress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+
+
+.fooret-mail,
+.footer-tel {
+    font-size: var(--main-fs);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+        
+    }
+}
+
+.footer-wrap-soc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+  
+
+.footer-text {
+    font-weight: 700;
+    font-size: var(--main-fs);
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.footer-soc {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-item:not(:last-child) {
+    margin-bottom: 8px;
+    @media screen and (min-width:1200px) {
+        margin-bottom: 9px;
+        }
+}
+
+.footer-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.footer-soc-icon {
+    fill: var(--white-color);
+}
+
+.footer-wrap-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    color: var(--white-color);
+    padding: 15px;
+    transition-property: outline-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+        outline-color: var(--accent-color);
+    }
+}
+
+.footer-input-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width:1200px) {
+        flex-direction: row;
+        align-items: baseline;
+        
+    }
+}
+
+.footer-input-field {
+    margin-bottom: 20px;
+    @media screen and (min-width:1200px) {
+        margin-right: 12px;
+    }
+  
+}
+
+.footer-button {
+    width: 200px;
+    height: 50px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    border: var(--accent-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--hover-btn-color);
+    }
+
+}
+
+.footer-send-icon {
+    margin-left: 10px;
+}
