@@ -134,13 +134,29 @@ flex-direction: column;
 }
 }
 
+.tel-cont {
+    padding-bottom: 20px;
+    @media screen and (min-width:1200px) {
+        padding-bottom: 32px;}
+}
+
+.mail-cont {
+    padding-top: 20px;
+    @media screen and (min-width:1200px) {
+            padding-top: 32px;}
+    }
+           
+            
+
 .contact__item {
     margin-right: 30px;
     @media screen and (min-width:768px) {
-         margin-bottom: 12px;  
-        }
+        margin-right: 0;
+        margin-bottom: 12px; 
+              }
     @media screen and (min-width:1200px) {
-             margin-left: 30px;
+         margin-bottom: 0;
+         margin-right: 30px;
          }
     }
 
@@ -189,12 +205,14 @@ flex-direction: column;
     padding-left: 40px;
 }
 
-// .mob-container{
-// width: 100%;
-// display: flex;
-// flex-direction: column;
-// justify-content: space-between;
-// }
+.mob-nav{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+
 
 .mob__item:not(:last-child) {
     margin-bottom: 32px;
@@ -213,12 +231,15 @@ flex-direction: column;
 color:var(--accent-color);
 }
 
-.mob-contact {
-    margin-top: 202px;
+.mob__list {
+    margin-bottom: 302px;
 }
 
 .tel-item {
     margin-bottom: 64px;
+}
+.mob__item .current {
+    color: var(--accent-color);
 }
 
 .tel-contact {
@@ -228,6 +249,8 @@ line-height: 40px;
 letter-spacing: 0.02em;
 color:var(--accent-color);
 }
+
+
 .mail-item {
 margin-bottom: 32px;
 }
@@ -243,12 +266,12 @@ color: var(--main-color);
 .menu-soc {
     display: flex;
     margin-top: 64px;
+    flex-wrap: wrap;
 
 }
     
 .menu-soc-item {
-margin-right: 20px;
-position: relative;
+margin-right: 10px;
 
 }
 
@@ -258,13 +281,11 @@ font-size: 18px;
 line-height: 22px;
 letter-spacing: 0.02em;
 color: var(--accent-color);
-&::after {
-        content: "";
-        width: 1px;
-        height: 22px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        color: rgba(33, 33, 33, 0.2);
-        margin-left: 10px;
-        position: absolute;
-    }
+margin-right: 10px;
+
+}
+
+.menu-soc-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  
 }
