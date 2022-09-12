@@ -10,10 +10,6 @@
         }
 }
 
-.button-item:not(:last-child) {
-    margin-right: 8px;
-}
-
 .button-btn {
     font-weight: 500;
     font-size: 16px;
@@ -25,7 +21,7 @@
     font-family: inherit;
     border-radius: 4px;
     padding: 6px 22px;
-    margin-bottom: 21px;
+    // margin-bottom: 21px;
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -49,10 +45,14 @@
 .button-list {
     display: flex;
     flex-wrap: wrap;
-    
-    margin-bottom: 50px;
+    gap: 15px 8px;
+    margin-bottom: 40px;
     @media screen and (min-width:768px) {
     justify-content: center;
+    margin-bottom: 30px;
     }  
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+}
 }
 
