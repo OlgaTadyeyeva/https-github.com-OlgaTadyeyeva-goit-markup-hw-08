@@ -174,10 +174,12 @@ flex-direction: column;
    border: none;
    background-color: transparent;
    margin-left: auto;
+   position: absolute;
+   top: 8px;
+   right: 8px;
    @media screen and (min-width:768px) {
     display: none;
    }
-
 }
 
 .menu-button .icon-cross {
@@ -187,11 +189,6 @@ flex-direction: column;
 .menu-button.is-open .icon-cross {
     display: block;
 }
-
-// .menu-button:hover .icon-menu, 
-// .menu-button:focus .icon-menu{
-// fill: var(--accent-color);
-// }
 
 .mob {
     position: fixed;
@@ -205,7 +202,7 @@ flex-direction: column;
     padding-left: 40px;
 }
 
-.mob-nav{
+.mob-container {
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -231,9 +228,9 @@ justify-content: space-between;
 color:var(--accent-color);
 }
 
-.mob__list {
-    margin-bottom: 302px;
-}
+// .mob__list {
+//     margin-bottom: 
+// }
 
 .tel-item {
     margin-bottom: 64px;
