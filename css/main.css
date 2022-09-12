@@ -328,6 +328,10 @@ body {
   color: var(--accent-color);
 }
 
+.mob__list {
+  margin-bottom: 100px;
+}
+
 .tel-item {
   margin-bottom: 64px;
 }
